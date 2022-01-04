@@ -1,6 +1,7 @@
 setInterval(() => {
   const now = new Date()
-  const goal = new Date(2022, 11, 25)
+  const currentYear = now.getFullYear()
+  const goal = new Date(currentYear, 11, 25)
   const totalSeconds = goal - now
 
   function prettier(id) {
@@ -10,16 +11,16 @@ setInterval(() => {
       id.textContent = array.join('')
     }
   }
+  
+  days.children[0].textContent = Math.floor((totalSeconds / 1000 / 60 / 60 / 24))
+  hours.children[0].textContent = Math.floor(((totalSeconds / 1000 / 60 / 60) % 24))
+  minutes.children[0].textContent = Math.floor(((totalSeconds / 1000 / 60) % 60))
+  seconds.children[0].textContent = Math.floor(((totalSeconds / 1000) % 60))
 
-  days.textContent = (totalSeconds / 1000 / 60 / 60 / 24).toFixed(0)
-  hours.textContent = ((totalSeconds / 1000 / 60 / 60) % 24).toFixed(0)
-  minutes.textContent = ((totalSeconds / 1000 / 60) % 60).toFixed(0)
-  seconds.textContent = ((totalSeconds / 1000) % 60).toFixed(0)
-
-  prettier(days)
-  prettier(hours)
-  prettier(minutes)
-  prettier(seconds)
+  prettier(days.children[0])
+  prettier(hours.children[0])
+  prettier(minutes.children[0])
+  prettier(seconds.children[0])
 
   console.log((totalSeconds / 1000) % 60)
 }, 1000)

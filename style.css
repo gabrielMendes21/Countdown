@@ -1,10 +1,22 @@
+:root {
+  --main-font: 'Poppins', sans-serif;
+  --background: #E14B4B;
+}
+
+/* CSS RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.countdown {
+body {
+  background-color: var(--background);
+  color: white;
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,10 +25,17 @@
   height: 100vh;
 }
 
+main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
 p {
-  font-size: 100px;
+  font-size: 6rem;
 }
 
 span {
-  font-size: 50px;
+  font-size: 3rem;
 }

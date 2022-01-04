@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
+    <!-- META -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <!--CSS-->    
     <link rel="stylesheet" href="style.css" />
+
+    <!--TITLE-->
     <title>Countdown</title>
   </head>
   <body>
-    <div class="countdown">
-      <p id="days"></p>
-      <span>:</span>
-      <p id="hours"></p>
-      <span>:</span>
-      <p id="minutes"></p>
-      <span>:</span>
-      <p id="seconds"></p>
-    </div>
+    <!-- COUNTDOWN CONTENT -->
+    <main>  
+        <div id="days">
+          <p></p>
+          <span>:</span>
+        </div>
 
+        <div id="hours">
+          <p></p>
+          <span>:</span>
+        </div>
+
+        <div id="minutes">
+          <p></p>
+          <span>:</span>
+        </div>
+
+        <div id="seconds">
+          <p></p>
+        </div>
+    </main>
+
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
   </body>
 </html>
