@@ -14,28 +14,62 @@
 body {
   background-color: var(--background);
   color: white;
+  font-family: var(--main-font);
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-
+  position: relative;
   height: 100vh;
 }
 
-main div {
+main > img {
+  display: none;
+}
+
+.countdown-content {
+  height: 80vh;
+
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 80px;
+  flex-direction: column;
+  gap: 50px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 300;
 }
 
 p {
-  font-size: 6rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: .8rem;
 }
 
 span {
-  font-size: 3rem;
+  display: none;
+}
+
+.bottom-images {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 10px;
+}
+
+.santa-claus {
+  width: 150px;
+}
+
+.christmas-tree {
+  width: 70px;
 }

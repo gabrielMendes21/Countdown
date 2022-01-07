@@ -7,40 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
 
-    <!--CSS-->    
+    <!--CSS-->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
     <!--TITLE-->
     <title>Countdown</title>
   </head>
   <body>
     <!-- COUNTDOWN CONTENT -->
-    <main>  
-        <div id="days">
-          <p></p>
-          <span>:</span>
+    <main>
+      <img src="assets/christmas-ornament.svg" alt="christmas ornament">
+      <section class="countdown-content">
+        <h1>O natal começa em:</h1>
+        <div class="countdown">
+          <div id="days">
+            <h2></h2>
+            <p>Dias</p>
+            <span>:</span>
+          </div>
+          <div id="hours">
+            <h2></h2>
+            <p>Horas</p>
+            <span>:</span>
+          </div>
+          <div id="minutes">
+            <h2></h2>
+            <p>Minutos</p>
+            <span>:</span>
+          </div>
+          <div id="seconds">
+            <h2></h2>
+            <p>Segundos</p>
+          </div>
         </div>
-
-        <div id="hours">
-          <p></p>
-          <span>:</span>
-        </div>
-
-        <div id="minutes">
-          <p></p>
-          <span>:</span>
-        </div>
-
-        <div id="seconds">
-          <p></p>
-        </div>
+      </section>
+      <div class="bottom-images">
+        <img src="assets/santa-claus.svg" alt="Santa Claus" class="santa-claus">
+        <img src="assets/christmas_tree.svg" alt="Christmas tree" class="christmas-tree">
+      </div>
     </main>
-
-    <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
   </body>
 </html>
