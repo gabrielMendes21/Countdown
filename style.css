@@ -15,61 +15,63 @@ body {
   background-color: var(--background);
   color: white;
   font-family: var(--main-font);
+  text-align: center;
 }
 
 main {
-  position: relative;
   height: 100vh;
+
+  display: grid;
+  grid-template-areas: 
+  'ornament ornament'
+  'countdown countdown'
+  'santa-claus tree';
+  grid-template-columns: 1fr 1fr;
 }
 
-main > img {
-  display: none;
-}
+img[alt*="ornament"] {
+  grid-area: ornament;
 
-.countdown-content {
-  height: 80vh;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 50px;
-}
-
-h1 {
-  font-size: 1.5rem;
-  text-align: center;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 2rem;
-  text-align: center;
-  font-weight: 300;
-}
-
-p {
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: .8rem;
+  justify-self: flex-end;
 }
 
 span {
   display: none;
 }
 
-.bottom-images {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: absolute;
-  bottom: 10px;
+h1 {
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  font-weight: 500;
+  margin-bottom: 40px;
 }
 
-.santa-claus {
+.countdown {
+  grid-area: countdown;
+}
+
+h2 {
+  font-size: clamp(1.9rem, 3vw, 6rem);
+  font-weight: 300;
+}
+
+p {
+  font-size: clamp(.57rem, 2vw, 1.8rem);
+  font-weight: 300;
+}
+
+img[alt*="Santa"] {
   width: 150px;
+  margin-bottom: 10px;
+
+  grid-area: santa-claus;
+  align-self: end;
 }
 
-.christmas-tree {
+img[alt*="tree"] {
   width: 70px;
+  margin-bottom: 10px;
+
+  grid-area: tree;
+  align-self: end;
+  justify-self: end;
 }
