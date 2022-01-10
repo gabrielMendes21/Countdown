@@ -35,7 +35,7 @@ img[alt*="ornament"] {
   grid-area: ornament;
   justify-self: flex-end;
 
-  width: clamp(128px, 40%, 300px);
+  width: clamp(128px, 40%, 350px);
 }
 
 span {
@@ -158,5 +158,17 @@ img[alt*="tree"] {
   span {
     top: 30px;
     font-size: 4rem;
+  }
+
+  img[alt*="ornament"] {
+    width: 350px;
+  }
+
+  img[alt*="Santa"] {
+    width: 300px; 
+  }
+
+  img[alt*="tree"] {
+    width: 150px;
   }
 }
