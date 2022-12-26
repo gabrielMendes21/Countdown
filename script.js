@@ -1,7 +1,7 @@
 setInterval(() => {
   const now = new Date()
-  const currentYear = now.getFullYear()
-  const goal = new Date(2023, 11, 25)
+  const year = now.getMonth() == 11 && now.getDate() > 25 ? now.getFullYear() + 1 : now.getFullYear()
+  const goal = new Date(year, 11, 25)
   const totalSeconds = goal - now
   
   days.children[0].textContent = String(Math.floor((totalSeconds / 1000 / 60 / 60 / 24))).padStart(2, '0')
