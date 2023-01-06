@@ -2,7 +2,7 @@
 
 I made a countdown to Christmas each year
 
-> Status: completed ✔️
+> Status: finshed ✔️
 
 You can see a countdown to christmas for the current year
 
